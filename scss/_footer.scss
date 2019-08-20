@@ -1,0 +1,79 @@
+//Start Style for footer
+@mixin _footer{
+  //height: 100vh;
+  background-color: $dark;
+}
+
+.footer{
+  @include _footer();
+}
+//End Style for footer
+
+//Start Style for footer-container
+@mixin _footer-container{
+    @extend .container-fluid;
+}
+
+.footer-container{
+  @include _footer-container();
+}
+//End Style for footer-container
+
+//Start Style for footer-row
+@mixin _footer-row{ 
+    @extend .row;
+  margin: auto;
+}
+
+.footer-row{
+  @include _footer-row();
+}
+
+@include media-breakpoint-up(md){
+  .footer-row{
+    width: 80%;
+  }
+}
+//End Style for footer-row
+
+//Start Style for footer-column
+@mixin _footer-column{
+  @extend .col-md-2, .offset-md-2;
+
+  //height: 33.3vh;
+  padding-top: 11.1vh;
+  padding-bottom: 11.1vh;
+
+  ul{
+    @extend .list-unstyled;
+    li{
+      @extend .text-white;
+    }
+  }
+}
+
+.footer-column{
+  @include _footer-column();
+}
+//End Style for footer-column
+
+@include media-breakpoint-down(md){
+  .footer-column{
+    padding-bottom: 0;
+    text-align: left;
+  }
+
+  .footer-row{
+    padding-bottom: 11.1vh;
+  }
+}
+
+//Start Style for footer-column-row
+@mixin _footer-column-row{
+  @extend .row, .align-items-center
+}
+
+.footer-column-row{
+  @include _footer-column-row();
+}
+//End Style for footer-column-row

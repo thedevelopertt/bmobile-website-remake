@@ -1,0 +1,117 @@
+//Start Style for section-2
+@mixin _section-2{
+  //@extend .debug-primary;
+  @extend .border-bottom, .border-primary;
+  height: 100vh;
+  position: relative;
+  background-image: url("../../img/bmobile_section_2_bg.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50% 50%;
+}
+
+.section-2{
+  @include _section-2();
+}
+//End Style for section-2
+
+//Start Style for section-2-inner
+@mixin _section-2-inner{
+  @extend .row, .align-items-center, .justify-content-center;
+  //@extend .debug-primary;
+   height: 33.3vh;
+
+  //background-color: #00E469;
+}
+
+.section-2-inner{
+  @include _section-2-inner();
+}
+//End Style for section-2-inner
+
+//Start Style for section-2-column
+@mixin _section-2-column{
+  @extend .col-md-8, .text-center;
+  h2{
+    @extend .display-4;
+    color: #00E469;
+  }
+}
+
+.section-2-column{
+  @include _section-2-column();
+}
+//End Style for section-2-column
+
+//Start Style for section-2-title
+@mixin _section-2-title{
+  @extend .section-2-column;
+  padding: 0;
+
+  h2{
+    @extend .text-white;
+  }
+}
+
+.section-2-title{
+  @include _section-2-title();
+}
+//End Style for section-2-title
+
+//Start Style for section-2-container
+@mixin _section-2-container {
+  @extend .container;
+}
+
+.section-2-container{
+  @include _section-2-container();
+}
+//End Style for section-2-container
+
+//Start Style for section-2-title-inner
+@mixin _section-2-title-inner{
+  @extend .section-2-inner;
+  //@extend .debug-primary;
+  height: (66.6vh)-(22.2vh);
+
+}
+
+.section-2-title-inner{
+  @include _section-2-title-inner();
+}
+//End Style for section-2-title-inner
+
+//Start Style for section-2-action
+@mixin _section-2-action{
+  @extend .btn, .btn-outline-primary;
+}
+
+.section-2-action{
+  @include _section-2-action();
+}
+//End Style for section-2-action
+
+//Start Style for section-2-lead
+@mixin _section-2-lead{
+  @extend .section-2-column;
+
+  p{
+    @extend .lead, .text-white;
+  }
+}
+
+.section-2-lead{
+  @include _section-2-lead();
+}
+//End Style for section-2-lead
+
+//Start Style for section-2-lead-inner
+@mixin _section-2-lead-inner{
+  @extend .section-2-inner;
+  height: 22.2vh;
+}
+
+.section-2-lead-inner{
+  @include _section-2-lead-inner();
+}
+//End Style for section-2-lead-inner

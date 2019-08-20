@@ -1,0 +1,23 @@
+//Start Style for navbar
+@mixin _navbar {
+  @extend .nav, .navbar-dark, .bg-dark, .fixed-top;
+  min-height: 11.1vh;
+  //display: none;
+}
+
+.navbar {
+  @include _navbar();
+}
+//End Style for navbar
+
+//Start Style for brand-nav-logo
+@mixin _brand-nav-logo {
+  @extend .navbar-brand;
+  height: 48px;
+}
+
+.brand-nav-logo {
+  @include _brand-nav-logo();
+}
+//End Style for brand-nav-logo
+

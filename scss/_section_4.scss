@@ -1,0 +1,128 @@
+//Start Style for section-4
+@mixin _section-4{
+  background-color: $primary;
+}
+
+.section-4{
+  @include _section-4();
+}
+//End Style for section-4
+
+//Start Style for section-4-container
+@mixin _section-4-container{
+  @extend .container-fluid;
+  //background-color: lightgrey;
+  min-height: 33.3vh;
+}
+
+.section-4-container{
+  @include _section-4-container();
+}
+//End Style for section-4-container
+
+//Start Style for section-4-inner
+@mixin _section-4-inner{
+  @extend .row;
+}
+
+@include media-breakpoint-down(md){
+  .section-4-inner{
+    min-height: 100vh;
+    align-items: center;
+  }
+}
+
+.section-4-inner{
+  @include _section-4-inner();
+}
+//End Style for section-4-inner
+
+//Start Style for section-4-title
+@mixin _section-4-title{
+  @extend .col-12;
+  h2{
+    @extend .text-center, .text-white;
+    span{
+      @extend  .display-4, .text-dark;
+      display: block;
+    }
+  }
+}
+
+.section-4-title{
+  @include _section-4-title();
+}
+//End Style for section-4-title
+
+//Start Style for section-4-title-container
+@mixin _section-4-title-container{
+  //@extend .row, .align-items-center, .justify-content-center;
+  @extend .col-md-8;
+}
+
+.section-4-title-container{
+  @include _section-4-title-container();
+}
+//End Style for section-4-title-container
+
+//Start Style for section-4-title-row
+@mixin _section-4-title-row{
+  @extend .row, .justify-content-center;
+  padding-top: 11.1vh;
+  padding-bottom: 11.1vh;
+}
+
+.section-4-title-row{
+  @include _section-4-title-row();
+}
+//End Style for section-4-title-row
+
+//Start Style for section-4-action
+@mixin _section-4-action{
+  @extend .btn, .btn-dark;
+}
+
+.section-4-action{
+  @include _section-4-action();
+}
+//End Style for section-4-action
+
+//Start Style for section-4-action-container
+@mixin _section-4-action-container{
+  padding-top: (3.7vh);
+}
+
+.section-4-action-container{
+  @include _section-4-action-container();
+}
+//End Style for section-4-action-container
+
+//Start Style for section-4-lead
+@mixin _section-4-lead{
+  padding-top: 11.1vh;
+  padding-bottom: 11.1vh;
+  p{
+    @extend .lead, .text-dark, .font-weight-bold;
+  }
+}
+
+.section-4-lead{
+  @include _section-4-lead();
+}
+//End Style for section-4-lead
+
+@include media-breakpoint-down(md){
+  .section-4-lead{
+    padding-top: 0;
+  }
+}
+
+//Start Style for section-4-lead-container
+@mixin _section-4-lead-container{
+  @extend .col-md-3;
+}
+
+.section-4-lead-container{
+  @include _section-4-lead-container();
+}
+//End Style for section-4-lead-container

@@ -1,0 +1,139 @@
+//Start Style for landing-page
+@mixin _landing-page {
+  @extend .border-bottom, .border-primary;
+  height: 100vh;
+  //background-color: #00E469;
+  //background-color: red;
+  //background-image: url("../../img/bmobile_top_bg.svg");
+  //background-repeat: no-repeat;
+  //background-size: cover;
+  //background-position: 50% 50%;
+  //background-blend-mode: exclusion;
+
+}
+
+//Start Style for landing-hero
+@mixin _landing-hero{
+  z-index: -2;
+  position: absolute;
+  height: 100vh;
+  width: 100%;
+  background-color: #00DFE9;
+
+  background-image: url("https://bmobile.co.tt/wp-content/uploads/2017/11/mobile_back.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50% 50%;
+  opacity: 0.9;
+}
+
+.landing-hero{
+  @include _landing-hero();
+}
+//End Style for landing-hero
+
+//Start Style for landing-bg
+@mixin _landing-bg{
+  position: absolute;
+  height: 100vh;
+  width: 100%;
+  z-index: -1;
+
+  background-image: url("../../img/bmobile_top_bg.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50% 50%;
+  //background-blend-mode: exclusion;
+  opacity: 0.7;
+}
+
+.landing-bg{
+  @include _landing-bg();
+}
+//End Style for landing-bg
+
+.landing-page {
+  @include _landing-page();
+}
+//End Style for landing-page
+
+//Start Style for title-container
+@mixin _title-container{
+  @extend .row,.justify-content-center, .align-items-center;
+  //@extend .debug-primary;
+
+  height: 77.7vh;
+
+  div{
+    //@extend .debug-secondary;
+  }
+
+}
+
+.title-container{
+  @include _title-container();
+}
+//End Style for title-container
+
+//Start Style for landing-page-container
+@mixin _landing-page-container{
+    @extend .container;
+}
+
+.landing-page-container{
+  @include _landing-page-container();
+}
+//End Style for landing-page-container
+
+//Start Style for landing-action
+@mixin _landing-action{
+    @extend .btn, .btn-dark;
+}
+
+.landing-action{
+  @include _landing-action();
+}
+//End Style for landing-action
+
+//Start Style for landing-action-container
+@mixin _landing-action-container{
+  @extend .row, .align-items-center;
+  height: 22.2vh;
+  padding-bottom: 4.93vh;
+  div{
+    @extend .col-sm-12, .text-center;
+  }
+}
+
+.landing-action-container{
+  @include _landing-action-container();
+}
+//End Style for landing-action-container
+
+//Start Style for title-text
+@mixin _title-text{
+  h1{
+    @extend .text-center, .display-3, .font-weight-bold, .text-white;
+  }
+}
+
+.title-text{
+  @include _title-text();
+}
+//End Style for title-text
+
+//Start Style for landing-input-text
+@mixin _landing-input-text{
+  @extend .input-group-text;
+  width: 99%;
+  margin: auto;
+
+  @include media-breakpoint-up(md){
+    width: 30%;
+  }
+}
+
+.landing-input-text{
+  @include _landing-input-text();
+}
+//End Style for landing-input-text

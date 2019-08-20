@@ -1,0 +1,100 @@
+//Start Style for section-3
+@mixin _section-3{
+  //@extend .border-bottom;
+  min-height: 100vh;
+}
+
+.section-3{
+  @include _section-3();
+}
+//End Style for section-3
+
+//Start Style for section-3-container
+@mixin _section-3-container{
+  @extend .container-fluid;
+}
+
+.section-3-container{
+  @include _section-3-container();
+}
+//End Style for section-3-container
+
+//Start Style for section-3-inner
+@mixin _section-3-inner{
+  @extend .row ;
+}
+
+.section-3-inner{
+  @include _section-3-inner();
+}
+//End Style for section-3-inner
+
+//Start Style for section-3-column
+@mixin _section-3-column{
+  @extend .col-md-4;
+  //@extend .debug-primary;
+  height: 100vh;
+}
+
+.section-3-column{
+  @include _section-3-column();
+}
+//End Style for section-3-column
+
+//Start Style for section-3-action
+@mixin _section-3-action{
+  @extend .btn, .btn-primary, .text-dark;
+}
+
+.section-3-action{
+  @include _section-3-action();
+}
+//End Style for section-3-action
+
+//Start Style for section-3-inner-row
+@mixin _section-3-inner-row{
+  @extend .row, .align-items-end, .justify-content-center;
+  height: 100vh;
+
+  div{
+    @extend .row, .align-items-center, .justify-content-center;
+
+    height: 22.2vh;
+    width: 100%;
+    background-color: rgba(11, 14, 16, 0.3)
+  }
+}
+
+.section-3-inner-row{
+  @include _section-3-inner-row();
+}
+//End Style for section-3-inner-row
+
+//Start Style for section-3-column-1
+@mixin _section-3-column-1{
+
+  @extend .section-3-column;
+  background-image: url("https://bmobile.co.tt/wp-content/uploads/2019/05/Bmobile-Transformation-banners-03-1280-x-720.png");
+  background-size: cover;
+}
+
+.section-3-column-1{
+  @include _section-3-column-1();
+}
+//End Style for section-3-column-1
+
+//Start Style for section-3-column-2
+@mixin _section-3-column-2{
+
+  @extend .section-3-column;
+  @extend .col-md-8;
+
+  background-image: url("https://bmobile.co.tt/wp-content/uploads/2019/04/LTE-banners-1280-x-720-handset_3-motnhs-02.png");
+  background-size: cover;
+  background-position: 50% 50%;
+}
+
+.section-3-column-2{
+  @include _section-3-column-2();
+}
+//End Style for section-3-column-2

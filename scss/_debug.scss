@@ -1,0 +1,19 @@
+//Start Style for debug-primary
+@mixin _debug-primary{
+    @extend .border, .border-primary;
+}
+
+.debug-primary{
+  @include _debug-primary();
+}
+//End Style for debug-primary
+
+//Start Style for debug-secondary
+@mixin _debug-secondary{
+    @extend .border, .border-secondary;
+}
+
+.debug-secondary{
+  @include _debug-secondary();
+}
+//End Style for debug-secondary

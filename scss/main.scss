@@ -1,0 +1,30 @@
+
+/*! `Custom` Bootstrap 4 theme */
+@import url(https://fonts.googleapis.com/css?family=Montserrat|Ubuntu:700);
+
+$headings-font-family : Ubuntu;
+$font-family-base: Montserrat;
+
+$primary:#00E469;
+$secondary:#868e96;
+$success:#28a745;
+$danger:#dc3545;
+$info:#99E025;
+$warning:#ffc107;
+$light:#f8f9fa;
+//$dark:#343a40;
+$dark : #000000;
+
+$btn-border-radius : 50rem;
+$btn-padding-x : 3rem;
+
+@import "bootstrap";
+@import "navbar";
+@import "landing_page";
+@import "debug";
+@import "section_2";
+@import "section_3";
+@import "section_4";
+@import "footer";
+
+$enable-responsive-font-sizes : true;
